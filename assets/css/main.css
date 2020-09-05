@@ -837,7 +837,10 @@ table.alt tbody tr td {
   .testimonials .content {
     border-radius: 4px;
     height: 100%;
-    padding: 3rem; }
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
     .testimonials .content .author {
       display: -moz-flex;
       display: -webkit-flex;
@@ -851,10 +854,10 @@ table.alt tbody tr td {
         margin: 0; }
       .testimonials .content .author .image {
         margin-right: 2rem;
-        width: 20%; }
+        width: 40px; }
         .testimonials .content .author .image img {
           border-radius: 100%;
-          max-width: 100%; }
+          width: 40px; }
     .testimonials .content .credit {
       font-size: 0.75rem; }
     .testimonials .content p:last-child {
