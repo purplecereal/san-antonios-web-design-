@@ -132,7 +132,10 @@ iframe {
   justify-content: center;
   align-items: center;
   padding: 15px;
-  background: rgba(132, 106, 221, 0.9);
+  background: linear-gradient(
+    rgba(128, 117, 255, 100),
+    rgba(128, 117, 255, 0.55)
+  );
 }
 
 .wrap-contact100 {
