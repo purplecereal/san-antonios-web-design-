@@ -132,9 +132,10 @@ iframe {
   justify-content: center;
   align-items: center;
   padding: 15px;
+  opacity: ;
   background: linear-gradient(
-    rgba(128, 117, 255, 100),
-    rgba(128, 117, 255, 0.55)
+    rgba(128, 117, 275, 100),
+    rgba(5, 3, 34, 0.015)
   );
 }
 
@@ -143,6 +144,7 @@ iframe {
   background: #fff;
   border-radius: 10px;
   overflow: hidden;
+  opacity: 85%;
 
   display: -webkit-box;
   display: -webkit-flex;
