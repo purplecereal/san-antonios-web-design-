@@ -71,7 +71,8 @@ call us today!.">
 		call us today!.">
 		<meta name="keywords" content="ecommerce web design agency,responsive web design company,web design enterprise, website builder, austin web design, austin web design companysan antonio web design, " />
         <meta name="robots" content="index, follow" />
-        <link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" type="text/css" href="assets/css/form.css">
 		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>		
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
@@ -274,57 +275,86 @@ call us today!.">
 			</section>
 <!-- Add video review here?  Let's look over the review first.-->
 <section>
-	<!-- this form needs to have some margin space-->
-	<h3 style="margin-right: 10%; margin-left: 10%; padding-bottom: 5%; text-align: center;">Tell us what you need and we will send you a quote in under 24 hours.</h3>
-	<form action="mail_handler.php" method="post" style="margin-right: 10%; margin-left: 10%; padding-bottom: 5%;">
-		First Name: <input type="text" name="first_name"><br>
-		Last Name: <input type="text" name="last_name"><br>
-		Email: <input type="text" name="email"><br>
-		Message: <br><textarea rows="5" name="message" cols="30"></textarea><br>
-		<input type="submit" name="submit" value="Submit">
-		</form>
-	
-	
 	<!--    
-<div class="budgetform"><form action="index.php" method="get">
-	<div class="form-group">
-	  <label for="email" style="color: whitesmoke;">Email address</label>
-	  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-	  <label for="phone" style="color: whitesmoke;">Phone number</label>
-	  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="210-555-5555">
-	
-	  <label for="content" style="color: whitesmoke;">Do you have content ready?</label>
-	  <select class="form-control form-control-lg">
-		<option>Yes, some</option>
-		<option>I have pictures, videos and contact info</option>
-		<option>Not really</option>
-		<option>I want stock photos and/or images for my project</option>
-	  </select>
-	  <label for="seo" style="color: whitesmoke;">Do you need Seo</label>
-	  <select class="form-control form-control-lg">
+		<div class="budgetform"><form action="index.php" method="get">
+			<div class="form-group">
+			  <label for="email" style="color: whitesmoke;">Email address</label>
+			  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+			  <label for="phone" style="color: whitesmoke;">Phone number</label>
+			  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="210-555-5555">
+			
+			  <label for="content" style="color: whitesmoke;">Do you have content ready?</label>
+			  <select class="form-control form-control-lg">
+				<option>Yes, some</option>
+				<option>I have pictures, videos and contact info</option>
+				<option>Not really</option>
+				<option>I want stock photos and/or images for my project</option>
+			  </select>
+			  <label for="seo" style="color: whitesmoke;">Do you need Seo</label>
+			  <select class="form-control form-control-lg">
+				
+				<option>Yes</option>
+				<option>No</option>
+				<option>Maybe</option>
 		
-		<option>Yes</option>
-		<option>No</option>
-		<option>Maybe</option>
-
-
-	  </select>
-	  <label for="services" style="color: whitesmoke;">What Service do you need?</label>
-	  <select class="form-control form-control-lg">
 		
-		<option>Eccomerce Website</option>
-		<option>Static Website</option>
-		<option>Mobile App</option>
-		<option>Desktop App</option>
-		<option>Mobile App, Desktop App and Website</option>
-		<option>Eccomerce Mobile App, Desktop App and Website</option>
-		<option>I'm not sure, I have questions or I need multiple services</option>
-	  </select>	
-		<label for="budgetusd" style="color: whitesmoke;">What is your budget in USD</label>
-		<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="For example: 5000-7000 USD">
-  </select>
-  <button type="submit" class="btn btn-light mb-2" style="margin-top: 20px">Confirm </button>
-  </form>   -->
+			  </select>
+			  <label for="services" style="color: whitesmoke;">What Service do you need?</label>
+			  <select class="form-control form-control-lg">
+				
+				<option>Eccomerce Website</option>
+				<option>Static Website</option>
+				<option>Mobile App</option>
+				<option>Desktop App</option>
+				<option>Mobile App, Desktop App and Website</option>
+				<option>Eccomerce Mobile App, Desktop App and Website</option>
+				<option>I'm not sure, I have questions or I need multiple services</option>
+			  </select>	
+				<label for="budgetusd" style="color: whitesmoke;">What is your budget in USD</label>
+				<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="For example: 5000-7000 USD">
+		  </select>
+		  <button type="submit" class="btn btn-light mb-2" style="margin-top: 20px">Confirm </button>
+		  </form>   -->
+	<div class="container-contact100">
+		<div class="wrap-contact100">
+			<div class="contact100-pic js-tilt" data-tilt>
+				<img src="images/img-01.png" alt="IMG">
+			</div>
+
+			<form action="mail_handler.php" method="post" class="contact100-form validate-form">
+				<span class="contact100-form-title">
+					Tell us what you need and we will send you a quote in under 24 hours.
+				</span>
+
+				<div class="wrap-input100 validate-input" data-validate="Name is required">
+					<input class="input100" type="text" name="name" placeholder="Name">
+					<span class="focus-input100"></span>
+					<span class="symbol-input100">
+						<i class="fa fa-user" aria-hidden="true"></i>
+					</span>
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+					<input class="input100" type="text" name="email" placeholder="Email">
+					<span class="focus-input100"></span>
+					<span class="symbol-input100">
+						<i class="fa fa-envelope" aria-hidden="true"></i>
+					</span>
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate="Message is required">
+					<textarea class="input100" name="message" placeholder="Message"></textarea>
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="container-contact100-form-btn">
+					<button type="submit" name="submit" value="Submit" class="contact100-form-btn">
+						Send
+					</button>
+				</div>
+			</form>
+		</div>
+	</div>
 </section>
 
 		<!-- Footer -->
