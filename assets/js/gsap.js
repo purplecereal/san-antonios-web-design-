@@ -23,17 +23,17 @@ projects.forEach(function (self) {
 
   var scene1 = new ScrollMagic.Scene({
     triggerElement: self,
-    triggerHook: "onCenter",
+    triggerHook: "0.8",
     duration: 500,
     offset: 0,
   })
     .setTween(sceneOne)
-    .addIndicators({
-      colorStart: "rgba(0,0,0,0.5)",
-      colorEnd: "rgba(0,0,0,0.5)",
-      colorTrigger: "rgba(0,0,0,1)",
-      name: "Scene",
-    })
+    // .addIndicators({
+    //   colorStart: "rgba(0,0,0,0.5)",
+    //   colorEnd: "rgba(0,0,0,0.5)",
+    //   colorTrigger: "rgba(0,0,0,1)",
+    //   name: "Scene",
+    // })
     .setClassToggle(self, "active")
     .addTo(controller);
 });
