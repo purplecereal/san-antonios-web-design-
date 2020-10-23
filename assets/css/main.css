@@ -2822,7 +2822,7 @@ ul.icons li .icon:before {
 @media screen and (max-width: 736px) {
   #banner {
     height: auto !important;
-    min-height: 0;
+    min-height: 100vh;
     padding: 4rem 2rem 4rem 2rem;
   }
   #banner .inner {
@@ -3879,3 +3879,5 @@ body.is-menu-visible #menu {
 #exampleFormControlInput1 {
   color: whitesmoke;
 }
+
+/* Here thar be extra styling  */
