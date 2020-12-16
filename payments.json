@@ -1,3 +1,0 @@
-curl -v -X GET https://api.sandbox.paypal.com/v1/billing/plans?product_id=PROD-XXCD1234QWER65782&page_size=2&page=1&total_required=true \
--H "Content-Type: application/json" \
--H "Authorization: Bearer AbS_9CLRuHb5OYxJs5WQuOkxwBCN4ujkUQhguRsmT96Y84u0xDm-FeyFpwCDzqC9E8BCO6IcxVmRE8Jd:EJJEHqZrjJzATlePqUrEp6oPdpR809cS0FCtpkQkXidLQePLvoC_FrzpHIWGMDfxfVl-ZmTLWkzNTCBb"
