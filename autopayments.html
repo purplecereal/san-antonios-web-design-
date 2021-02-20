@@ -104,15 +104,80 @@
 					</div>
 				</div>
 
-					<section id="main" class="wrapper">
+
+				<section id="main" class="wrapper">
+					<div class="inner">
+						<div class="content">
+							<header>
+	
+							</header>
+							<p style="text-align: center;"> <sans style="color: #8075ff; font-size: 200%;">$50  every two weeks</sans> </p> 
+							<div id="paypal-button-container" style="text-align: center;"></div>
+							<script src="https://www.paypal.com/sdk/js?client-id=AcAQ_Y8nxI9xPIn5y_cKxCOiyDAHN9Zsgdr3D69-P2kvOmk81gIic210wTH747WfY7GtAgFiG5R7uhcO&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
+							<script>
+							  paypal.Buttons({
+								  style: {
+									  shape: 'pill',
+									  color: 'blue',
+									  layout: 'horizontal',
+									  label: 'subscribe'
+								  },
+								  createSubscription: function(data, actions) {
+									return actions.subscription.create({
+									  'plan_id': 'P-08P44034J1847794PMAYXQEI'
+									});
+								  },
+								  onApprove: function(data, actions) {
+									alert(data.subscriptionID);
+								  }
+							  }).render('#paypal-button-container');
+							</script>
+						</div>
+					</div>
+				</section>
+
+
+				<section id="main" class="wrapper">
+					<div class="inner">
+						<div class="content">
+							<header>
+	
+							</header>
+							<p style="text-align: center;"> <sans style="color: #8075ff; font-size: 200%;">$100  every two weeks</sans> </p> 
+							<div id="paypal-button-container1" style="text-align: center;"></div>
+							<script src="https://www.paypal.com/sdk/js?client-id=AcAQ_Y8nxI9xPIn5y_cKxCOiyDAHN9Zsgdr3D69-P2kvOmk81gIic210wTH747WfY7GtAgFiG5R7uhcO&vault=true&intent=subscription" data-sdk-integration-source="button-factory" data-namespace = "paypal_sdk"> </script>
+							<script>
+							  paypal.Buttons({
+								  style: {
+									  shape: 'pill',
+									  color: 'blue',
+									  layout: 'horizontal',
+									  label: 'subscribe'
+								  },
+								  createSubscription: function(data, actions) {
+									return actions.subscription.create({
+									  'plan_id': 'P-08P44034J1847794PMAYXQEI'
+									});
+								  },
+								  onApprove: function(data, actions) {
+									alert(data.subscriptionID);
+								  }
+							  }).render('#paypal-button-container1');
+							</script>
+						</div>
+					</div>
+				</section>
+
+
+				<section id="main" class="wrapper">
 						<div class="inner">
 							<div class="content">
 								<header>
 		
 								</header>
 								<p style="text-align: center;"> <sans style="color: #8075ff; font-size: 200%;">$200  every two weeks</sans> </p> 
-								<div id="paypal-button-container" style="text-align: center;"></div>
-								<script src="https://www.paypal.com/sdk/js?client-id=AcAQ_Y8nxI9xPIn5y_cKxCOiyDAHN9Zsgdr3D69-P2kvOmk81gIic210wTH747WfY7GtAgFiG5R7uhcO&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
+								<div id="paypal-button-container2" style="text-align: center;"></div>
+								<script src="https://www.paypal.com/sdk/js?client-id=AcAQ_Y8nxI9xPIn5y_cKxCOiyDAHN9Zsgdr3D69-P2kvOmk81gIic210wTH747WfY7GtAgFiG5R7uhcO&vault=true&intent=subscription" data-sdk-integration-source="button-factory" data-namespace = "paypal_sdk"> </script>
 								<script>
 								  paypal.Buttons({
 									  style: {
@@ -129,7 +194,7 @@
 									  onApprove: function(data, actions) {
 										alert(data.subscriptionID);
 									  }
-								  }).render('#paypal-button-container');
+								  }).render('#paypal-button-container2');
 								</script>
 							</div>
 						</div>
@@ -145,7 +210,7 @@
 			
 									</header>
 									<p style="text-align: center;"> <sans style="color: #8075ff; font-size: 200%;">$300  every two weeks</sans> </p> 
-									<div id="paypal-button-container2" style="text-align: center;"></div>
+									<div id="paypal-button-container3" style="text-align: center;"></div>
 									<script src="https://www.paypal.com/sdk/js?client-id=AcAQ_Y8nxI9xPIn5y_cKxCOiyDAHN9Zsgdr3D69-P2kvOmk81gIic210wTH747WfY7GtAgFiG5R7uhcO&vault=true&intent=subscription" data-sdk-integration-source="button-factory" data-namespace = "paypal_sdk"> </script>
 									<script>
 									  paypal.Buttons({
@@ -163,7 +228,7 @@
 										  onApprove: function(data, actions) {
 											alert(data.subscriptionID);
 										  }
-									  }).render('#paypal-button-container2');
+									  }).render('#paypal-button-container3');
 									</script>
 								</div>
 							</div>
