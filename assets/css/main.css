@@ -2542,7 +2542,7 @@ ul.icons li .icon:before {
   -webkit-justify-content: center;
   -ms-justify-content: center;
   justify-content: center;
-  background-image: url("../../images/banner.jpg");
+  background-image: url("../../images/banner.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2868,7 +2868,7 @@ body.is-preload #banner:before {
       rgba(128, 117, 255, 100),
       rgba(128, 117, 255, 0.55)
     ),
-    url(../../images/cta01.jpg);
+    url(../../images/cta01.webp);
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -3312,7 +3312,7 @@ body {
 }
 body:before {
   content: " ";
-  background-image: url(../../images/bg.jpg);
+  background-image: url(../../images/bg.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -3442,7 +3442,7 @@ body:before {
       rgba(17, 17, 17, 0.25),
       rgba(17, 17, 17, 0.25)
     ),
-    url("../../images/banner.jpg");
+    url("../../images/banner.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -3866,7 +3866,7 @@ body.is-menu-visible #menu {
       rgba(120, 60, 243, 100),
       rgba(73, 28, 241, 0.55)
     ),
-    url("/images/background-2462431_1920.jpg");
+    url("/images/background-2462431_1920.webp");
   color: whitesmoke;
   border: whitesmoke;
   height: 700px;
