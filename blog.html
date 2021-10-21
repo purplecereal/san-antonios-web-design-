@@ -36,92 +36,113 @@
 			<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>		
 			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 			<link rel="shortcut icon" href="./images/salogo.png" />
-			<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-	var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-	(function(){
-	var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-	s1.async=true;
-	s1.src='https://embed.tawk.to/5ffa0bd0a9a34e36b96abd68/1erkbs9qd';
-	s1.charset='UTF-8';
-	s1.setAttribute('crossorigin','*');
-	s0.parentNode.insertBefore(s1,s0);
-	})();
-	</script>
-	<!--End of Tawk.to Script-->
 
+<!-- addiotonal css -->
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- tobii css -->
+    <link href="css/tobii.min.css" rel="stylesheet" type="text/css" />
+    <!-- Icons -->
+    <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+    <!-- Slider -->               
+    <link rel="stylesheet" href="css/tiny-slider.css"/> 
+    <!-- Main Css -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+			<!-- Global site tag (gtag.js) - Google Analytics -->
+			<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120798924-2"></script>
+			<script>
+			  window.dataLayer = window.dataLayer || [];
+			  function gtag(){dataLayer.push(arguments);}
+			  gtag('js', new Date());
+			
+			  gtag('config', 'UA-120798924-2');
+			</script>
+			<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4801884296816610"
+			crossorigin="anonymous"></script>
 		
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120798924-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-120798924-2');
-</script>
-
-
-<!-- Facebook Pixel Code -->
-<script>
-	!function(f,b,e,v,n,t,s)
-	{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-	n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-	if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-	n.queue=[];t=b.createElement(e);t.async=!0;
-	t.src=v;s=b.getElementsByTagName(e)[0];
-	s.parentNode.insertBefore(t,s)}(window, document,'script',
-	'https://connect.facebook.net/en_US/fbevents.js');
-	fbq('init', '1441548096230781');
-	fbq('track', 'PageView');
-  </script>
-  <noscript><img height="1" width="1" style="display:none"
-	src="https://www.facebook.com/tr?id=1441548096230781&ev=PageView&noscript=1"
-  /></noscript>
-  <!-- End Facebook Pixel Code -->
-
 	</head>
-
-	<body class="is-preload">
-		<!-- Header -->
-			<header id="header">
-				<a href="index.html" class="logo">
-
-					<img src="./images/logo.svg" width="70%" height="70%">
-
-				 </a>	
-				<a href="tel:210-239-7606" style="color:#8075ff; font-weight: 600;">Call</a>
-					<a class="logo" href="#menu">Menu</a>  
-				</nav>
-			</header>
-			<nav id="menu">
-				<ul class="links">
-					<li><a href="index.html" class="sub-menu-item">Home</a></li>
-                    <li><a href="Web-design-Portfolio.html">Web Design portfolio</a></li>	
-					<li><a href="Mobile-Application-portfolio.html">Mobile App Portfolio</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-				</ul>
-			</nav>
-		<!-- Banner -->
-		<section id="banner">
-			<div class="inner">
-				<h1>San Antonio Web Design Blog</h1>
-				<p>
-				Where San Antonio learns about Web Design
-					</p>
-					<!--<div class="button" style="border: 2px solid white"><a style="color: white;" href="get-started.html">Get Started</a></div>
-					-->	</div>
-		</section>
- 
-
-</section>
+	<body> 
+		<!-- Loader -->
+		<div id="preloader">
+			<div id="status">
+				<div class="spinner">
+					<div class="double-bounce1"></div>
+					<div class="double-bounce2"></div>
+				</div>
+			</div>
+		</div>
+		<!-- Loader -->
+		<!-- Navbar STart -->
+		<header id="topnav" class="defaultscroll sticky">
+			<div class="container">
+				<!-- Logo container-->
+				<a class="logo" href="index.html">
+					<span class="logo-light-mode">
+						<img src="images/salogo.png" class="l-dark" height="24" alt="">
+						<img src="images/salogo.png" class="l-light" height="24" alt="">
+					</span>
+					<img src="images/salogo.png" height="24" class="logo-dark-mode" alt="">
+				</a>
+				<div class="buy-button">
+					<a href="tel:+210-239-7606" target="_blank" class="btn btn-primary">Call Now</a>
+				</div><!--end login button-->
+				<!-- End Logo container-->
+				<div class="menu-extras">
+					<div class="menu-item">
+						<!-- Mobile menu toggle-->
+						<a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+							<div class="lines">
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</a>
+						<!-- End mobile menu toggle-->
+					</div>
+				</div>
+				<div id="navigation">
+					<!-- Navigation Menu-->   
+					<ul class="navigation-menu nav-light">
+						<li><a href="index.html" class="sub-menu-item">Home</a></li>
+						<li><a href="Web-design-Portfolio.html">Web Design portfolio</a></li>	
+						 <li><a href="Mobile-Application-portfolio.html">Mobile App Portfolio</a></li>
+						<li><a href="blog.html">Blog</a></li>	</ul>
+						
+					</ul><!--end navigation menu-->
+					<div class="buy-menu-btn d-none">
+						<a href="tel:+210-239-7606" class="btn btn-primary">Call Now</a> </div><!--end login button-->
+				 </div><!--end navigation-->
+			</div><!--end container-->
+		</header><!--end header-->
+		<!-- Navbar End -->
+	
+			<!-- Hero Start -->
+			<section class="bg-half bg-light d-table w-100">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-md-6 col-12">
+							<div class="title-heading">
+								<span class="badge rounded-pill bg-soft-primary">web design blog San Antonio</span>
+								<span class="badge rounded-pill bg-soft-primary">web design blog</span>
+	
+								<h1 class="fw-bold mt-2 mb-3">San Antonio&#39;s <br>web design blog</h1>
+								<p class="para-desc text-muted">Read up on web design tips for business owners.</p>
+									  </p>
+														</div>
+						</div><!--end col-->
+	
+					</div><!--end row-->
+				</div> <!--end container-->
+			</section><!--end section-->
 		<div class="highlights">
 
 			<section class="project">
 				<div class="content a-bounce">
 					<header>
 						<a href="./How-much-does-the-Average-website-owner-make.html"><img src="images/undraw_wallet_aym5.svg" alt="How much do website owners make in 2021"  width="250px" height="150px" loading="lazy" ></a>
-						<h2 style="font-size: Large;">How much do web site owners make?</h2>
+						<h2 style="font-size: 1.5em !important;">How much do web site owners make?</h2>
 					</header>
 					<br><li><a href="./How-much-does-the-Average-website-owner-make.html">Want to know how website owners are making fat stacks? Click here.</a></li>
 				</div>
@@ -131,7 +152,7 @@
 				<div class="content a-bounce">
 					<header>
 						<a href="./wix-vs-wordpress-vs-custom-development.html"><img src="images/undraw_progressive_app_m9ms.svg" alt="Why is San Antonio coming to us for our Web Design Service?"  width="250px" height="150px" loading="lazy" ></a>
-						<h2 style="font-size: Large;">Wix vs wordpress vs custom development</h2>
+						<h2 style="font-size: 1.5em !important;">Wix vs wordpress vs custom development</h2>
 					</header>
 					<br><li><a href="./wix-vs-wordpress-vs-custom-development.html">not sure what is right for your business? click here to read more.</a></li>
 				</div>
@@ -143,7 +164,7 @@
 				<div class="content a-bounce">
 					<header>
 						<a href="./Does-your-business-website-really-need-a-blog.html"><img src="images/undraw_fashion_blogging_w9ol.svg" alt="Why is San Antonio coming to us for our Web Design Service?"  width="250px" height="150px" loading="lazy" ></a>
-						<h2 style="font-size: Large;">Does your business website really need a blog?</h2>
+						<h2 style="font-size: 1.5em !important;">Does your business website really need a blog?</h2>
 					</header>
 					<br><li><a href="./Does-your-business-website-really-need-a-blog.html">Not sure? Click here to find out.</a></li>
 				</div>
@@ -154,7 +175,7 @@
 				<div class="content a-bounce">
 					<header>
 						<a href="./why-do-we-charge-a-down-payment-for-our -web-design-services.html"><img src="images/undraw_forgot_password_gi2d.svg" alt="Why is San Antonio coming to us for our Web Design Service?"  width="250px" height="150px" loading="lazy" ></a>
-						<h2 style="font-size: Large;">Wondering why we charge a down payment?</h2>
+						<h2 style="font-size: 1.5em !important;">Wondering why we charge a down payment?</h2>
 					</header>
 					<br><li><a href="./why-do-we-charge-a-down-payment-for-our -web-design-services.html">Click here to learn more</a></li>
 				</div>
@@ -164,7 +185,7 @@
 				<div class="content a-bounce">
 					<header>
 						<a href="./How-to-find-your-wordpress-login-url.html"><img src="images/undraw_secure_login_pdn4.svg" alt="Why is San Antonio coming to us for our Web Design Service?"  width="250px" height="150px" loading="lazy" ></a>
-						<h2 style="font-size: Large;">Having trouble logging into wordpress?</h2>
+						<h2 style="font-size: 1.5em !important;">Having trouble logging into wordpress?</h2>
 					</header>
 					<br><li><a href="./How-to-find-your-wordpress-login-url.html">Find out how to find your login page & password reset</a></li>
 				</div>
@@ -175,7 +196,7 @@
 				<div class="content a-bounce">
 					<header>
 						<a href="./Is-bluehost-good-for-wordpress.html"><img src="images/undraw_wordpress_utxt.svg" alt="Why is San Antonio coming to us for our Web Design Service?"  width="250px" height="150px" loading="lazy" ></a>
-						<h2 style="font-size: Large;">Are you considering bluehost for your wordpress site?</h2>
+						<h2 style="font-size: 1.5em !important;">Are you considering bluehost for your wordpress site?</h2>
 					</header>
 					<br><li><a href="./Is-bluehost-good-for-wordpress.html">Find out why our customers love bluehost for their wordpress site.</a></li>
 				</div>
@@ -186,7 +207,7 @@
 				<div class="content a-bounce">
 					<header>
 						<a href="./Average-cost-of-website-design-for-small-business.html"><img src="images/cost_of_blogging.svg" alt="Why is San Antonio coming to us for our Web Design Service?"  width="250px" height="150px" loading="lazy" ></a>
-						<h2 style="font-size: Large;">Are you a small business owner?</h2>
+						<h2 style="font-size: 1.5em !important;">Are you a small business owner?</h2>
 					</header>
 					<br><li><a href="./Average-cost-of-website-design-for-small-business.html">Click here to find out how much a website costs for a small business</a></li>
 				</div>
@@ -196,7 +217,7 @@
 				<div class="content a-bounce">
 					<header>
 						<a href="./How-long-does-it-take-to-build-shopify-website.html"><img src="images/undraw_pending_approval_xuu9.svg" alt="Why is San Antonio coming to us for our Web Design Service?"  width="250px" height="150px" loading="lazy" ></a>
-						<h2 style="font-size: Large;">You're interested in a custom shopify store? Well are you wondering how long it would take to build it?</h2>
+						<h2 style="font-size: 1.5em !important;">You're interested in a custom shopify store? Well are you wondering how long it would take to build it?</h2>
 					</header>
 					<br><li><a href="./How-long-does-it-take-to-build-shopify-website.html">Your shopify store could take a few weeks or months to build. Find out more here.</a></li>
 				</div>
@@ -207,7 +228,7 @@
 				<div class="content a-bounce">
 					<header>
 						<a href="./How-long-it-take-for-a-website-to-go-live.html"><img src="images/undraw_season_change_f99v.svg" alt="Why is San Antonio coming to us for our Web Design Service?"  width="250px" height="150px" loading="lazy" ></a>
-						<h2 style="font-size: Large;">You built your website, where is it?</h2>
+						<h2 style="font-size: 1.5em !important;">You built your website, where is it?</h2>
 					</header>
 					<br><li><a href="./How-long-it-take-for-a-website-to-go-live.html">How long does it take to publish my site, how long does ssl, and transfers take?</a></li>
 				</div>
@@ -218,7 +239,7 @@
 				<div class="content a-bounce">
 					<header>
 						<a href="./How-much-does-it-cost-to-build-a-Shopify-website.html"><img src="images/undraw_online_payments_luau.svg" alt="Why is San Antonio coming to us for our Web Design Service?"  width="250px" height="150px" loading="lazy" ></a>
-						<h2 style="font-size: Large;">how much does it cost to build a shopify website in 2021/2022?</h2>
+						<h2 style="font-size: 1.5em !important;">how much does it cost to build a shopify website in 2021/2022?</h2>
 					</header>
 					<br><li><a href="./How-much-does-it-cost-to-build-a-Shopify-website.html">how much does it cost to build a shopify website in 2021/2022?</a></li>
 				</div>
@@ -229,7 +250,7 @@
 				<div class="content a-bounce">
 					<header>
 						<a href="./5-Web-Design-practices-that-san-Antonio-business-will-be-sure-to-want-to-use.html"><img src="images/undraw_By_the_road_re_vvs7.svg" alt="Why is San Antonio coming to us for our Web Design Service?"  width="250px" height="150px" loading="lazy" ></a>
-						<h2 style="font-size: Large;">5 web design practices that are helping San Antonio Business owners</h2>
+						<h2 style="font-size: 1.5em !important;">5 web design practices that are helping San Antonio Business owners</h2>
 					</header>
 					<br><li><a href="./5-Web-Design-practices-that-san-Antonio-business-will-be-sure-to-want-to-use.html">5 web design practices that are helping San Antonio Business owners</a></li>
 				</div>
@@ -241,7 +262,7 @@
 				<div class="content a-bounce">
 					<header>
 						<a href="./The-top-10-Web-Design-in-San-Antonio.html"><img src="images/undraw_everyday_design_gy64.svg" alt="Why is San Antonio coming to us for our Web Design Service?"  width="250px" height="150px" loading="lazy" ></a>
-						<h2 style="font-size: Large;">The top ten web designs</h2>
+						<h2 style="font-size: 1.5em !important;">The top ten web designs</h2>
 					</header>
 					<br><li><a href="./The-top-10-Web-Design-in-San-Antonio.html">top 10 web designs in San Antonio</a></li>
 				</div>
@@ -252,7 +273,7 @@
 				<div class="content a-bounce">
 					<header>
 						<a href="./best-web-design-hosting-in-san-antonio.html"><img src="images/undraw_winners_ao2o.svg" alt="Why is San Antonio coming to us for our Web Design Service?"  width="250px" height="150px" loading="lazy" ></a>
-						<h2 style="font-size: Large;">The best web design hosting in San Antonio</h2>
+						<h2 style="font-size: 1.5em !important;">The best web design hosting in San Antonio</h2>
 					</header>
 					<br><li><a href="./best-web-design-hosting-in-san-antonio.html">Find the best web design hosting near you</a></li>
 				</div>
@@ -262,7 +283,7 @@
 				<div class="content a-bounce">
 					<header>
 						<a href="./How-to-Pick-A-Domain-Name.html"><img src="images/undraw_Domain_names_re_0uun.svg" alt="Why is San Antonio coming to us for our Web Design Service?"  width="250px" height="150px" loading="lazy" ></a>
-						<h2 style="font-size: Large;">How to pick a domain name</h2>
+						<h2 style="font-size: 1.5em !important;">How to pick a domain name</h2>
 					</header>
 					<br><li><a href="./How-to-Pick-A-Domain-Name.html">Your website name is your domain name, find out where to get one.</a></li>
 				</div>
@@ -273,7 +294,7 @@
 				<div class="content a-bounce">
 					<header>
 						<a href="./15-WORST-SE0-PRACTICES.html"><img src="images/undraw_Questions_re_1fy7.svg" alt="Why is San Antonio coming to us for our Web Design Service?"  width="250px" height="150px" loading="lazy" ></a>
-						<h2 style="font-size: Large;">15 Worst SEO practices</h2>
+						<h2 style="font-size: 1.5em !important;">15 Worst SEO practices</h2>
 					</header>
 					<br><li><a href="./15-WORST-SE0-PRACTICES.html">15 Worst SEO practices</a></li>
 				</div>
@@ -283,7 +304,7 @@
 				<div class="content a-bounce">
 					<header>
 						<a href="The-actual-cost-of-getting-traffic-from-blogging.html"><img src="images/cost_of_blogging.svg" alt="Why is San Antonio coming to us for our Web Design Service?"  width="250px" height="150px" loading="lazy" ></a>
-						<h2 style="font-size: Large;">The actual cost of getting traffic from blogging</h2>
+						<h2 style="font-size: 1.5em !important;">The actual cost of getting traffic from blogging</h2>
 					</header>
 					<br><li><a href="The-actual-cost-of-getting-traffic-from-blogging.html">Invest time and money into your blogs</a></li>
 				</div>
@@ -294,7 +315,7 @@
 				<div class="content a-bounce">
 					<header>
 						<a href="Top-4-san-antonio-web-designers.html"><img src="images/undraw_Developer_activity_re_39tg.svg" alt="top 4 web designers in san antonio."  width="250px" height="150px" loading="lazy" ></a>
-						<h2 style="font-size: Large;">Top 4 web designers in San antonio</h3>
+						<h2 style="font-size: 1.5em !important;">Top 4 web designers in San antonio</h3>
 					</header>
 					<br><li><a href="Top-4-san-antonio-web-designers.html">Check out the top 4 Web Designers/Developers in San Antonio</a></li>
 				</div>
@@ -303,7 +324,7 @@
 				<div class="content a-bounce">
 					<header>
 						<a href="How-much-does-it-cost-to-build-a-wordpress-plugin.html"><img src="images/undraw_wordpress_utxt.svg" alt="how much does it cost to build a wordpress plugin."  width="250px" height="150px" loading="lazy" ></a>
-						<h2 style="font-size: Large;">How much does it cost to build a wordpress plugin</h3>
+						<h2 style="font-size: 1.5em !important;">How much does it cost to build a wordpress plugin</h3>
 					</header>
 					<br><li><a href="How-much-does-it-cost-to-build-a-wordpress-plugin.html">click here to see how much it would cost to build a wordpress plugin.</a></li>
 				</div>
@@ -312,7 +333,7 @@
 				<div class="content a-bounce">
 					<header>
 						<a href="./Is-shopify-affordable-for-a-small-business.html"><img src="images/undraw_wordpress_utxt.svg" alt="Is shopify affordable for a small business"  width="250px" height="150px" loading="lazy" ></a>
-						<h2 style="font-size: Large;">Is shopify affordable for a small business</h3>
+						<h2 style="font-size: 1.5em !important;">Is shopify affordable for a small business</h3>
 					</header>
 					<br><li><a href="./Is-shopify-affordable-for-a-small-business.html">Is shopify affordable for a small business</a></li>
 				</div>
@@ -325,7 +346,7 @@
 				<div class="content a-bounce">
 					<header>
 						<a href="Why_Do_Busineses_hire_professional_Web_Designers.html"><img src="images/undraw_Questions_re_1fy7.svg" alt="Why is San Antonio coming to us for our Web Design Service?"  width="250px" height="150px" loading="lazy" ></a>
-						<h2 style="font-size: Large;">Why is San Antonio coming to us for our Web Design Service?</h2>
+						<h2 style="font-size: 1.5em !important;">Why is San Antonio coming to us for our Web Design Service?</h2>
 					</header>
 					<br><li><a href="Why_Do_Busineses_hire_professional_Web_Designers.html">Why should you hire a professional web Designer</a></li>
 				</div>
@@ -334,7 +355,7 @@
 				<div class="content a-bounce">
 					<header>
 						<a href="SEO_&_why_it_takes_longer_for_certain_websites_to_rank_on_google.html"><img src="images/undraw_feeling_blue_4b7q.svg" alt="If you are in San Antonio, Seo could take months!"  width="250px" height="150px" loading="lazy" ></a>
-						<h2 style="font-size: Large;">If you are in San Antonio, Seo could take months!</h3>
+						<h2 style="font-size: 1.5em !important;">If you are in San Antonio, Seo could take months!</h3>
 					</header>
 					<br><li><a href="SEO_&_why_it_takes_longer_for_certain_websites_to_rank_on_google.html">SEO & why it takes  longer for certain websites to rank on google</a></li>
 				</div>
@@ -343,7 +364,7 @@
 				<div class="content a-bounce">
 					<header>
 						<a href="How_can_I_Drive_Free_Traffic_to_my_website.html"><img src="images/undraw_Feeling_of_joy_re_cqko.svg" alt="San Antonio web design customers are getting free website traffic!"  width="250px" height="150px" loading="lazy" ></a>
-						<h2 style="font-size: Large;">San Antonio web design customers are getting free website traffic!</h3>
+						<h2 style="font-size: 1.5em !important;">San Antonio web design customers are getting free website traffic!</h3>
 					</header>
 					<br><li><a href="How_can_I_Drive_Free_Traffic_to_my_website.html">How can I Drive Free Traffic to my website</a></li>
 				</div>
@@ -352,7 +373,7 @@
 				<div class="content a-bounce">
 					<header>
 						<a href="How_Can_I_get_more_money_from_my_website.html"><img src="images/undraw_make_it_rain_iwk4.svg" alt="Our Customers are making thousands from their website!"  width="250px" height="150px" loading="lazy" ></a>
-						<h2 style="font-size: Large;">Our Customers are making thousands from their website!</h3>
+						<h2 style="font-size: 1.5em !important;">Our Customers are making thousands from their website!</h3>
 					</header>
 					<br><li><a href="How_Can_I_get_more_money_from_my_website.html">How Can I get more money from my website</a></li>
 				</div>
@@ -361,7 +382,7 @@
 				<div class="content a-bounce">
 					<header>
 						<a href="How_Can_I_Get_On_Googles_First_Page.html"><img src="images/undraw_finish_line_katerina_limpitsouni_xy20 (1).svg" alt="San Antonio Web Design will put you on google's first page"  width="250px" height="150px" loading="lazy" ></a>
-						<h2 style="font-size: Large;">San Antonio Web Design will put you on google's first page</h3>
+						<h2 style="font-size: 1.5em !important;">San Antonio Web Design will put you on google's first page</h3>
 					</header>
 					<br><li><a href="How_Can_I_Get_On_Googles_First_Page.html">How can I get on Google’s First Page?</a></li>
 				</div>
@@ -370,7 +391,7 @@
 				<div class="content a-bounce">
 					<header>
 						<a href="What_is_Influencer_marketing.html"><img src="images/undraw_fitness_tracker_3033.svg" alt="San Antonio is using influencer marketing to beat the competition"  width="250px" height="150px" loading="lazy" ></a>
-						<h2 style="font-size: Large;">San Antonio is using influencer marketing to beat the competition</h3>
+						<h2 style="font-size: 1.5em !important;">San Antonio is using influencer marketing to beat the competition</h3>
 					</header>
 					<br><li><a href="What_is_Influencer_marketing.html">What is Influencer marketing?</a></li>
 				</div>
@@ -379,7 +400,7 @@
 				<div class="content a-bounce">
 					<header>
 						<a href="seo.html"><img src="images/undraw_People_search_re_5rre.svg" alt="San Antonio web Design Customers are becoming SEO experts"  width="250px" height="150px" loading="lazy" ></a>
-						<h2 style="font-size: Large;">San Antonio web Design Customers are becoming SEO experts!</h3>
+						<h2 style="font-size: 1.5em !important;">San Antonio web Design Customers are becoming SEO experts!</h3>
 					</header>
 					<br><li><a href="seo.html">What is Seo?</a></li>
 				</div>
@@ -388,7 +409,7 @@
 				<div class="content a-bounce">
 					<header>
 						<a href="25-web-professional-tips.htm"><img src="images/undraw_fans_gr54.svg" alt="San Antonio Web Design wants to share these 25 web design tips with you!"  width="250px" height="150px" loading="lazy" ></a>
-						<h2 style="font-size: Large;">San Antonio Web Design wants to share these 25 web design tips with you!</h3>
+						<h2 style="font-size: 1.5em !important;">San Antonio Web Design wants to share these 25 web design tips with you!</h3>
 					</header>
 					<br><li><a href="25-web-professional-tips.html">25 professional web design tips</a></li>
 				</div>
@@ -397,7 +418,7 @@
 				<div class="content a-bounce">
 					<header>
 						<a href="Why-You-should-start-an-eccomerce-enterprise.html"><img src="images/undraw_Savings_re_eq4w.svg" alt="San Antonio customers are making 6 figures with their Ecommerce Enterprises"  width="250px" height="150px" loading="lazy" ></a>
-						<h2 style="font-size: Large;">San Antonio customers are making 6 figures with their Ecommerce Enterprises</h3>
+						<h2 style="font-size: 1.5em !important;">San Antonio customers are making 6 figures with their Ecommerce Enterprises</h3>
 					</header>
 					<br><li><a href="Why-You-should-start-an-eccomerce-enterprise.html">Why should you start an eccomerce enterprise</a></li>
 				</div>
@@ -406,7 +427,7 @@
 				<div class="content a-bounce">
 					<header>
 						<a href="7-Reasons-why-Hiring-a-developer-can-make-your-life-easier.html"><img src="images/undraw_product_iteration_kjok.svg" alt="Hiring a Web Designer will change your life."  width="250px" height="150px" loading="lazy" ></a>
-						<h2 style="font-size: Large;">Hiring a Web Designer will change your life. </h3>
+						<h2 style="font-size: 1.5em !important;">Hiring a Web Designer will change your life. </h3>
 					</header>
 					<br><li><a href="7-Reasons-why-Hiring-a-developer-can-make-your-life-easier.html">Did you know a web developer can help you make money online?</a></li>
 				</div>
@@ -415,7 +436,7 @@
 				<div class="content a-bounce">
 					<header>
 						<a href="How-Social-media-can-get-you-more-traffic-to-your-E-Commerce-Store.html"><img src="images/undraw_printing_invoices_5r4r.svg" alt="Social Media is literally money!"  width="250px" height="150px" loading="lazy" ></a>
-						<h2 style="font-size: Large;">Social Media is literally money!</h3>
+						<h2 style="font-size: 1.5em !important;">Social Media is literally money!</h3>
 					</header>
 					<br><li><a href="How-Social-media-can-get-you-more-traffic-to-your-E-Commerce-Store.html">Social Media is bringing us and our customers tons of cashflow</a></li>
 				</div>
@@ -424,7 +445,7 @@
 				<div class="content a-bounce">
 					<header>
 						<a href="How-mobile-app-development-can-be-a-very-high-profit-investment.html"><img src="images/undraw_business_shop_qw5t.svg" alt="San Antonio's Web Design is making millionare App owners"  width="250px" height="150px" loading="lazy" ></a>
-						<h2 style="font-size: Large;">San Antonio's Web Design is making millionare App owners</h3>
+						<h2 style="font-size: 1.5em !important;">San Antonio's Web Design is making millionare App owners</h3>
 					</header>
 					<br><li><a href="How-mobile-app-development-can-be-a-very-high-profit-investment.html">Here's why building your app can make you generational wealth.</a></li>
 				</div>
@@ -433,7 +454,7 @@
 				<div class="content a-bounce">
 					<header>
 						<a href="Complete-web-design-guide.html"><img src="images/undraw_Yacht_re_kkai.svg" alt="San Antonio's Web Design wants you to succeed!"  width="250px" height="150px" loading="lazy" ></a>
-						<h2 style="font-size: Large;">San Antonio's Web Design wants you to succeed!</h3>
+						<h2 style="font-size: 1.5em !important;">San Antonio's Web Design wants you to succeed!</h3>
 					</header>
 					<br><li><a href="Complete-web-design-guide.html">Never be alone with our free Complete web design guide</a></li>
 				</div>
@@ -442,7 +463,7 @@
 				<div class="content a-bounce">
 					<header>
 						<a href="Top-4-web-design-trends.html"><img src="images/undraw_develop_app_kvt2.svg" alt="Do you know the current web design trends"  width="250px" height="150px" loading="lazy" ></a>
-						<h2 style="font-size: Large;">Do you know the current web design trends</h3>
+						<h2 style="font-size: 1.5em !important;">Do you know the current web design trends</h3>
 					</header>
 					<br><li><a href="Top-4-web-design-trends.html">Learn the top web design trends</a></li>
 				</div>
@@ -451,7 +472,7 @@
 				<div class="content a-bounce">
 					<header>
 						<a href="Why-a-good-web-design-can-change-your-business.html"><img src="images/undraw_Devices_re_dxae.svg" alt="Does your website inspire confidence?"  width="250px" height="150px" loading="lazy" ></a>
-						<h2 style="font-size: Large;">Does your website inspire confidence?</h3>
+						<h2 style="font-size: 1.5em !important;">Does your website inspire confidence?</h3>
 					</header>
 					<br><li><a href="Why-a-good-web-design-can-change-your-business.html">Find out how your Web Design can make or break your business</a></li>
 				</div>
@@ -463,82 +484,102 @@
 
 </header></section></section></section>
 
-<!-- Footer -->
-	<!-- Footer -->
-	<footer id="footer">
-		<div class="inner">
-			<div class="content">
-				<section>
-					<h3>San Antonio Web Design</h3>
-					<p>				A media company Based in San Antonio, focused on app development, web design, and Seo.
-						We develop and design your online image so you can focus on your business. Let us handle your online presence, while you focus on servicing your clientele. As Software Engineers We deliver top-notch quality that no other company can offer. With San Antonio's Web Design you aren't just getting a Web Designer, you're getting a Software Engineering team who will push you to the top of your niche.	
-						<h3 style="color:#8075ff">Contact us</h3>
-						
-						<a href="tel:+12102397606">Call or text</a>
-						<br><a href="mailto: sanantonioswebdesign@gmail.com">Email</a>
-						<br><a href="https://www.google.com/maps/place/San+Antonio's+Web+Design/@29.481137,-98.7945945,10z/data=!3m1!4b1!4m5!3m4!1s0x865c5f63a10b785d:0x9295aeae49883d11!8m2!3d45.5980213!4d-127.2696389">Address: remote, San Antonio, Texas</a>
-						
-					</p>
-
-					<h3>Texas Service Areas</h3>
-					<p>San Antonio Houston Austin Roundrock Dallas Fredericksburgh Frisco Laredo Galveston Katy Mcallen Poteet Pearsall Kileen New Braunfels Shertz Seguin Boerne Canyon Lake Cibolo Converse Leon Valley Live Oak Pleasanton Selma Timberwood Park Universal City Austin Helotes Bandera Kileen San Angelo Harlingen Weslaco Brownsville Mcallen El Paso Beaumont Port Arthur Lubbock Ft. Worth Waco Temple San Antonio Bryan Laredo Tyler Longview Lufkin Nacogdoches Abilene Sweetwater Corpus Christi Amarillo Shreveport Odessa Midland Wichita Falls Lawton McKinney grand prairie Lewisville San Marcos Conroe Edingburg Canyon lake Pflugerville Bayton Lemming Rio grande city Andrews
-				</p>
-					<br><br>
-					<h3>california Service Areas</h3>
-					Los Angeles San Francisco San Diego Sacramento California City San Jose Fresno Oakland Bakersfield Riverside Santa Barbara Stockton Long Beach Santa Monica Irvine San Bernardino Beverly Hills Malibu Berkeley Modesto Anaheim Pasadena Oxnard Palm springs Monterey San Luis Obispo Santa Clara Santa Cruz Santa Rosa Fremont Ventura Santa Ana Huntington Beach Temecula Burbank San Mateo Compton Cupertino Newport Beach Vacaville Walnut Creek Moreno Valley Big Bear Lake Glendale Inglewood Oceanside Mammoth Lakes Palmdale Pomona Victorville Carlsbad
-
-					<p>
-				</p>
-					<br><br>
-
-				</section>
-				<section>
-					<h4>Our services</h4>
-					<ul class="alt">
-						<li>E-Commerce</li>
-						<li>Web Applications</li>
-						<li>Mobile Application Development</li>
-						<li>SEO & Web Design</li>
-						<li>Web Hosting</li>
-						<li>Maintenence</li>
-								<br><br>
-						<h4 style="color:#8075ff">Financing</h4>
-						
-							<li><a href="https://start.zip.co/?pp=zipBizBasic&_ga=2.250520960.722411811.1613808814-301674048.1613808814">Zip Money&nbsp;&nbsp;&nbsp;</a><img src="./images/download.svg" width="120px" height="120px"></li>
-							<li><a href="./autopayments.html">Pay Pal&nbsp;&nbsp;&nbsp;</a></li>
-
-
+	  <!-- Footer Start -->
+	  <footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
+					<a href="#" class="logo-footer">
+						<img src="images/logo-light.png" height="24" alt="">
+					</a>
+					<p class="mt-4">A San Antonio Web Design company focused on web design, app development, and Seo.
+						We develop and design your online image so you can focus on your business. Let us handle your online presence, while you focus on servicing your clientele. As Software Engineers We deliver top-notch quality that no other company can offer. With San Antonio's Web Design you aren't just getting a Web Designer, you're getting a Software Engineering team who will push you to the top of your niche.	</p>
+	</p>
+					<ul class="list-unstyled social-icon foot-social-icon mb-0 mt-4">
+						<li class="list-inline-item"><a href="https://www.facebook.com/Sanantonioswebdesign" class="rounded"><i data-feather="facebook" class="fea icon-sm fea-social"></i></a></li>
+						<li class="list-inline-item"><a href="https://www.instagram.com/sanantonios_web_design" class="rounded"><i data-feather="instagram" class="fea icon-sm fea-social"></i></a></li>
+						<li class="list-inline-item"><a href="https://twitter.com/sanantoniosweb1" class="rounded"><i data-feather="twitter" class="fea icon-sm fea-social"></i></a></li>
+											 
+					
+					</ul><!--end icon-->
+				</div><!--end col-->
+				
+				
+				<div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+					<h5 class="text-light footer-head">Usefull Links</h5>
+					<ul class="list-unstyled footer-list mt-4">
+						<li><a href="./best-web-design-hosting-in-san-antonio.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i>Best web site hosting for a small business</a></li>
+						<li><a href="./Is-bluehost-good-for-wordpress.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Should I use bluehost for my small business wordpress site</a></li>
+						<li><a href="./How-much-does-it-cost-to-build-a-Shopify-website.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> How much does shopify development cost for a small business</a></li>
+						<li><a href="./Average-cost-of-website-design-for-small-business.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i>Average cost of web design</a></li>
+						  
+					
+					
 					</ul>
-				</section>
-				<section>
-					<h4>Social Media</h4>
-					<ul class="plain">
-						<li><a href="https://www.facebook.com/Sanantonioswebdesign"><i class="icon fa-facebook">&nbsp;</i>Facebook</a></li>
-						<li><a href="https://www.instagram.com/sanantonios_web_design/"><i class="icon fa-instagram">&nbsp;</i>Instagram</a></li>
+				</div><!--end col-->
+	
+		  
+			</div><!--end row-->
+		</div><!--end container-->
+	</footer><!--end footer-->
+	<footer class="footer footer-bar">
+		<div class="container text-center">
+			<div class="row align-items-center">
+				<div class="col-sm-6">
+					<div class="text-sm-start">
+						<p class="mb-0">© <script>document.write(new Date().getFullYear())</script> San Antonio's Web Design -</i> <a href="https://sanantonioswebdesign.com/Web-design-Portfolio.html" target="_blank" class="text-reset"><span style="color: aliceblue;">Web Design services for small businesses</span></a>.</p>
+					</div> 
+				</div><!--end col-->
+	
+				<div class="col-sm-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
+					<ul class="list-unstyled text-sm-end mb-0">
+						<li class="list-inline-item"><a href="javascript:void(0)"><img src="images/payments/american-ex.png" class="avatar avatar-ex-sm" title="American Express" alt=""></a></li>
+						<li class="list-inline-item"><a href="javascript:void(0)"><img src="images/payments/discover.png" class="avatar avatar-ex-sm" title="Discover" alt=""></a></li>
+						<li class="list-inline-item"><a href="javascript:void(0)"><img src="images/payments/master-card.png" class="avatar avatar-ex-sm" title="Master Card" alt=""></a></li>
+						<li class="list-inline-item"><a href="javascript:void(0)"><img src="images/payments/paypal.png" class="avatar avatar-ex-sm" title="Paypal" alt=""></a></li>
+						<li class="list-inline-item"><a href="javascript:void(0)"><img src="images/payments/visa.png" class="avatar avatar-ex-sm" title="Visa" alt=""></a></li>
 					</ul>
-				</section>
-		
+				</div><!--end col-->
+			</div><!--end row-->
+		</div><!--end container-->
+	</footer><!--end footer-->
+	<!-- Footer End -->
+	
+	<!-- Modal Content Start -->
+	<div class="modal fade" id="loginform" tabindex="-1" role="dialog" aria-hidden="true" style="padding-bottom: 20%;">
+		<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+			<div class="modal-content rounded shadow-lg border-0 overflow-hidden position-relative">
+				<button type="button" class="btn-close position-absolute top-0 end-0 mt-2 me-2" style="z-index: 1" data-bs-dismiss="modal" aria-label="Close"></button>
+				<div class="modal-body p-0">
+					<div class="container-fluid px-0">
+						<div class="row align-items-center g-0">
+							<div class="col-lg-6 col-md-5">
+							</div><!--end col-->
+	
+							
+							</div><!--end col-->
+						</div><!--end row-->
+					</div><!--end container-->
+				</div>
 			</div>
-			<div class="copyright">
-				 &copy; <script type="text/javascript">
-					document.write(new Date().getFullYear());</script> San Antonio's Web design<a href="https://www.sanantonioswebdesign.com"></a> 
-			</div>
-
 		</div>
-	</footer>
-	<link rel="preload" href="assets/js/jquery.min.js" as="script">
-	<link rel="preload" href="assets/js/browser.min.js" as="script">
-	<link rel="preload" href="assets/js/breakpoints.min.js" as="script">
-	<link rel="preload" href="assets/js/util.js" as="script">
-	<link rel="preload" href="assets/js/main.js" as="script">
-	<link rel="preload" href="https://code.jquery.com/jquery-3.2.1.slim.min.js" as="script">
-	<link rel="preload" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" as="script">
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	</div>
+	<!-- Modal Content End -->
+	
+	<!-- Back to top -->
+	<a href="#" onclick="topFunction()" id="back-to-top" class="btn btn-icon btn-primary back-to-top"><i data-feather="arrow-up" class="icons"></i></a>
+	<!-- Back to top -->
+	
+	
+	
+	<!-- javascript -->
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<!-- SLIDER -->
+	<script src="js/tiny-slider.js "></script>
+	<!-- Icons -->
+	<script src="js/feather.min.js"></script>
+	<!-- Main Js -->
+	<script src="js/plugins.init.js"></script><!--Note: All init js like tiny slider, counter, countdown, maintenance, lightbox, gallery, swiper slider, aos animation etc.--> <!-- Design template provided by landrick & Shreethemese-->
+	<script src="js/app.js"></script><!--Note: All important javascript like page loader, menu, sticky menu, menu-toggler, one page menu etc. -->
 	</body>
 	</html>
