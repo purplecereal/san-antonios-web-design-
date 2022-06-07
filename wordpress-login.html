@@ -4,7 +4,7 @@
 <html>
 	<head>
 			<title>How to login to wordpress</title>
-			<!-- from https://sanantonioswebdesign.com/How-to-find-your-wordpress-login-url.html -->
+		
 		<meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -17,23 +17,23 @@
 <meta property="article:publisher" content="https://www.sanantonioswebdesign.com/Wordpress-login.html" />
 <meta name="contact" content="Phone: 210-239-7606" />
 <meta name="copyright" content="San Antonio's Web Design" />
-<meta naem="title" content="How to find your wordpress login url - San Antonios Web Design - San Antonio's Web Design" />
+<meta naem="title" content="How to login to wordpress" />
 <meta name="geo.placename" content="San Antonio, Texas" />
-<meta name="DC.title" content="How to find your wordpress login url - San Antonios Web Design - San Antonio's Web Design" />
-<meta name="geo.position" content="29.4241219;-98.49362819999999" />
+<meta name="DC.title" content="How to login to wordpress" />
+
 <meta name="google-site-verification" content="wjJCu5GGu9FHDv02At5HWuJDArhFStM79JTGujKlPGA" />
-		<meta name="description" content="These are the How to find your wordpress login url right now! Does your website make the cut?" />
-		<meta property="og:description"  content="These are the How to find your wordpress login url right now! Does your website make the cut?" />
+		<meta name="description" content="Logging into wordpress is easy with these simple steps." />
+		<meta property="og:description"  content="Logging into wordpress is easy with these simple steps." />
   <link rel="canonical" href="https://www.Sanantonioswebdesign.com/Wordpress-login.html" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="How to find your wordpress login url - San Antonios Web Design - San Antonio's Web Design." />
+  <meta property="og:title" content="How to login to wordpress." />
   <meta property="og:url" content="https://www.Sanantonioswebdesign.com/Wordpress-login.html" />
   <meta property="og:site_name" content="San Antonios Web Design" />
   <meta property="og:image" content="https://ik.imagekit.io/2l9aizfajk/superhero_js_cW8rQr8-F.jpg?tr=w-1200,h-630,fo-auto" />
   <meta property="og:image:type" content="https://ik.imagekit.io/2l9aizfajk/superhero_js_cW8rQr8-F.jpg?tr=w-1200,h-630,fo-auto" />
   <meta property="og:image:secure_url" content="https://ik.imagekit.io/2l9aizfajk/superhero_js_cW8rQr8-F.jpg?tr=w-1200,h-630,fo-auto" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="How to find your wordpress login url - San Antonios Web Design - San Antonio's Web Design" />
+  <meta name="twitter:title" content="How to login to wordpress" />
   <meta name="twitter:image" content="https://ik.imagekit.io/2l9aizfajk/superhero_js_cW8rQr8-F.jpg?tr=w-1200,h-675,fo-auto" />
 
 
@@ -50,6 +50,21 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <link rel="shortcut icon" href="./images/salogo.png" />
+
+
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- tobii css -->
+    <link href="css/tobii.min.css" rel="stylesheet" type="text/css" />
+    <!-- Icons -->
+    <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+    <!-- Slider -->               
+    <link rel="stylesheet" href="css/tiny-slider.css"/> 
+    <!-- Main Css -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+
 		
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120798924-2"></script>
@@ -90,52 +105,68 @@
 	</head>
 	<body class="is-preload">
 
-		<!-- Header -->
-		<header id="header">
-			<img src="./images/logo.svg" width="70%" height="70%">			<a href="tel:210-239-7606" style="color:#8075ff; font-weight: 600;">Call</a>
-				<a class="logo" href="#menu">Menu</a>  
-			</nav>
-		</header>
-
-		<nav id="menu">
-			<ul class="links">
-				<li><a href="index.html" class="sub-menu-item">Home</a></li>
-				<li><a href="Web-design-Portfolio.html">Web Design portfolio</a></li>	
-				<li><a href="Mobile-Application-portfolio.html">Mobile App Portfolio</a></li>
-				<li><a href="blog.html">Blog</a></li>
-			</ul>
-		</nav>
-		<!-- Banner -->
-	
+    <!-- Loader -->
+    <!-- Navbar STart -->
+    <header id="topnav" class="defaultscroll sticky">
+        <div class="container">
+            <!-- Logo container-->
+            <a class="logo" href="index.html">
+                <span class="logo-light-mode">
+                    <img src="images/salogo.png" class="l-dark" height="24" alt="san antonios web design logo - dark">
+                    <img src="images/salogo.png" class="l-light" height="24" alt="san antonios web design logo -light">
+                </span>
+                <img src="images/salogo.png" height="24" class="logo-dark-mode" alt="san antonios web design logo- dark">
+            </a>
+            <div class="buy-button">
+                <a href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3O1aGtpbvRp61e2ARiOX4ympLlL8oOj91ox3A73y_TGuR7ZsZyLd1ebvF_Juls6xC3NDqmEJlk" target="_blank" class="btn btn-primary">Schedule appointment</a>
+            </div><!--end login button-->
+            <!-- End Logo container-->
+            <div class="menu-extras">
+                <div class="menu-item">
+                    <!-- Mobile menu toggle-->
+                    <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+                        <div class="lines">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </a>
+                    <!-- End mobile menu toggle-->
+                </div>
+            </div>
+            <div id="navigation">
+                <!-- Navigation Menu-->   
+                <ul class="navigation-menu nav-light">
+                    <li><a href="index.html" class="sub-menu-item">Home</a></li>
+                    <li><a href="Web-design-Portfolio.html">Web Design portfolio</a></li>	
+		 			<li><a href="Mobile-Application-portfolio.html">Mobile App Portfolio</a></li>
+                    <li><a href="blog.html">Blog</a></li>	</ul>
+                    
+                </ul><!--end navigation menu-->
+                <div class="buy-menu-btn d-none">
+                    <a href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2aVvzHOD9a42bNUAv3jpRxDHyXxgmYhNK7WJ-7VVR6_zrM7aFwycYGRjVdRau1VQ9tqx-Le3p2" target="_blank" class="btn btn-primary">Schedule appointment</a>
+                </div><!--end navigation-->
+        </div><!--end container-->
+    </header><!--end header-->
+    <!-- Navbar End -->
 			<section class="wrapper">
 				<div class="inner">
 					<header class="special">
 
                     <h1 style="padding-bottom: 10%;padding-top: 10%;">How to login to wordpress</h1>
-                    <p>You did it! Your website is finally finished. So now you want to blog to get some traffic. But what now?
-                        How do you even do that? How do you get to your dashboard? How do you login? What now?
-                        
-                        <br><br>
-                        No worries, we compiled a short article to help you do just that.
-                         
-                        <br>
-                        <br>
-                        First off, you need to go to your websites url. 
-                        
-                        <br>
-                        <br>
-                        Let’s say your websites url is sanantonioswebdesign.com, if that was the case you would go to sanantonioswebdesign.com/login or sanantonioswebdesign.com/admin, in some cases it might be sanantonioswebdesign.com/wp-admin. <br><br> Either way after your domain name you just add one of those possible filenames to the end of your url.  
-                                            </p>
+                    <p>Logging into wordpress is easy. Once you set up your site, or your web designer sets up your site you may want to login and start blogging to start creating some traffic. 
+						If that's the case. Well let us tell you how.
+                   </p>
 
 
                                             <img src="https://ik.imagekit.io/2l9aizfajk/wploginpage_ubV-e0ChI.png"  loading="lazy" height="20%" width="60%" style="padding-top: 10%;padding-bottom: 10%;">
 
-						<p>If you don’t remember them there is also a forgotten password link usually that you can use to gain access.                          
+						<p>It's very easy. You just add "/admin" to the end of your url. For example, sanantonioswebdesign.com/admin would redirect you to the admin page of <a href="sanantonioswebdesign.com">San Antonios web design</a> if it was built in wordpress.                          
                             </p>    
                             
                             <img src="https://ik.imagekit.io/2l9aizfajk/lost-your-password-_Dxqs97KMXgI.png"  loading="lazy" height="20%" width="60%" style="padding-top: 10%;padding-bottom: 10%;">
                         
-                            <p>In some cases your website could have some issues with their datatables, if that is the case and forgot password is not working, simply contact your web designer or a web design company such as san antonio web design and we can help you solve this issue.
+                            <p>You may have to reset your password. using the forgot In some cases your website could have some issues with their datatables, if that is the case and forgot password is not working, simply contact your web designer or a web design company such as san antonio web design and we can help you solve this issue.
                             </p>
                                 
                             
@@ -153,94 +184,115 @@
 		
 					</section>
 	  
+  <!-- Footer Start -->
+  <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
+                <a href="#" class="logo-footer">
+                    <img src="images/salogo.png" height="24" alt="">
+                </a>
+                <p class="mt-2" style="font-size: small;">San Antonio&#39;s web design offers affordable web design services, website development, website maintenance, web hosting services, mobile application development, and SEO. We develop and design your online image so you can focus on your business. Let us handle your online presence while you focus on servicing your clientele. As Software Engineers, We deliver top-notch quality that no other company can offer. With San Antonio's Web Design, you aren't just getting a Web Designer, you're getting a Software Engineering team who will push you to the top of your niche. <br><br>	
+                    <script>document.write('Phone: 210-239-7606');</script><br>
+                    <script>document.write('Email: development@sanantonioswebdesign.com');</script>
+    
+                </p>              
+                   <ul class="list-unstyled social-icon foot-social-icon mb-0 mt-4">
+                    <li class="list-inline-item"><a href="https://www.facebook.com/Sanantonioswebdesign" class="rounded"><i data-feather="facebook" class="fea icon-sm fea-social"></i></a></li>
+                    <li class="list-inline-item"><a href="https://www.instagram.com/sanantonios_web_design" class="rounded"><i data-feather="instagram" class="fea icon-sm fea-social"></i></a></li>
+                    <li class="list-inline-item"><a href="https://twitter.com/sanantoniosweb1" class="rounded"><i data-feather="twitter" class="fea icon-sm fea-social"></i></a></li>
+                                         
+                
+                </ul><!--end icon-->
+            </div><!--end col-->
+            
+            <div class="col-lg-2 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                <h5 class="text-light footer-head">Menu</h5>
+                <ul class="list-unstyled footer-list mt-4">
+                    <li><a href="index.html" class="sub-menu-item">Home</a></li>
+                    <li><a href="Web-design-Portfolio.html">Web Design portfolio</a></li>	
+		 			<li><a href="Mobile-Application-portfolio.html">Mobile App Portfolio</a></li>
+                    <li><a href="blog.html">Blog</a></li></ul>
+                    
+            </div><!--end col-->
+            
+            <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                <h5 class="text-light footer-head">Useful Links</h5>
+                <ul class="list-unstyled footer-list mt-4">
+                    <li><a href="./best-web-host.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i>Best Website hosting for a small business in 2022</a></li>
+                    <li><a href="./Is-bluehost-good-for-wordpress.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Should I use bluehost for my small business wordpress site in 2022?</a></li>
+                    <li><a href="./How-much-does-it-cost-to-build-a-Shopify-website.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> How much does shopify development cost for a small business in 2022?</a></li>
+                    <li><a href="./Average-cost-of-website-design-for-small-business.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i>Average cost of a custom web design in 2022</a></li>
+                    <li><a href="./tos.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i>Terms of service</a></li>
+                                      </ul>
+            </div><!--end col-->
 
-<!-- Footer -->
-<footer id="footer">
-	<div class="inner">
-		<div class="content">
-			<section>
-				<h3>San Antonio Web Design</h3>
-				<p>				A media company Based in San Antonio, focused on app development, web design, and Seo.
-					We develop and design your online image so you can focus on your business. Let us handle your online presence, while you focus on servicing your clientele. As Software Engineers We deliver top-notch quality that no other company can offer. With San Antonio's Web Design you aren't just getting a Web Designer, you're getting a Software Engineering team who will push you to the top of your niche.	  
-					<h3 style="color:#8075ff">Contact us</h3>
-					
-					<a href="tel:+12102397606">Call or text</a>
-					<br><a href="mailto: sanantonioswebdesign@gmail.com">Email</a>
-					<br><a href="https://www.google.com/maps/place/San+Antonio's+Web+Design/@29.481137,-98.7945945,10z/data=!3m1!4b1!4m5!3m4!1s0x865c5f63a10b785d:0x9295aeae49883d11!8m2!3d45.5980213!4d-127.2696389">Address: remote, San Antonio, Texas</a>
-					
-				</p>
+      
+        </div><!--end row-->
+    </div><!--end container-->
+</footer><!--end footer-->
+<footer class="footer footer-bar">
+    <div class="container text-center">
+        <div class="row align-items-center">
+            <div class="col-sm-6">
+                <div class="text-sm-start">
+                    <p class="mb-0">© <script>document.write(new Date().getFullYear())</script> San Antonio's Web Design LLC
+                    </i> <a href="https://sanantonioswebdesign.com/Web-design-Portfolio.html" target="_blank" class="text-reset"><span style="color: aliceblue;"></span></a></p>
+                
+                <p style="font-size: x-small;">A development, internet marketing, and affiliate marketing company</p></div> 
+             
 
-				<h3>Texas Service Areas</h3>
-				<p>San Antonio Houston Austin Roundrock Dallas Fredericksburgh Frisco Laredo Galveston Katy Mcallen Poteet Pearsall Kileen New Braunfels Shertz Seguin Boerne Canyon Lake Cibolo Converse Leon Valley Live Oak Pleasanton Selma Timberwood Park Universal City Austin Helotes Bandera Kileen San Angelo Harlingen Weslaco Brownsville Mcallen El Paso Beaumont Port Arthur Lubbock Ft. Worth Waco Temple San Antonio Bryan Laredo Tyler Longview Lufkin Nacogdoches Abilene Sweetwater Corpus Christi Amarillo Shreveport Odessa Midland Wichita Falls Lawton McKinney grand prairie Lewisville San Marcos Conroe Edingburg Canyon lake Pflugerville Bayton Lemming Rio grande city Andrews
-			</p>
-				<br><br>
-				<h3>california Service Areas</h3>
-				Los Angeles San Francisco San Diego Sacramento California City San Jose Fresno Oakland Bakersfield Riverside Santa Barbara Stockton Long Beach Santa Monica Irvine San Bernardino Beverly Hills Malibu Berkeley Modesto Anaheim Pasadena Oxnard Palm springs Monterey San Luis Obispo Santa Clara Santa Cruz Santa Rosa Fremont Ventura Santa Ana Huntington Beach Temecula Burbank San Mateo Compton Cupertino Newport Beach Vacaville Walnut Creek Moreno Valley Big Bear Lake Glendale Inglewood Oceanside Mammoth Lakes Palmdale Pomona Victorville Carlsbad
+            </div><!--end col-->
 
-				<p>
-			</p>
-				<br><br>
+            <div class="col-sm-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                <ul class="list-unstyled text-sm-end mb-0">
+                    <li class="list-inline-item"><a href="javascript:void(0)"><img src="images/payments/american-ex.png" class="avatar avatar-ex-sm" title="American Express" alt=""></a></li>
+                    <li class="list-inline-item"><a href="javascript:void(0)"><img src="images/payments/discover.png" class="avatar avatar-ex-sm" title="Discover" alt=""></a></li>
+                    <li class="list-inline-item"><a href="javascript:void(0)"><img src="images/payments/master-card.png" class="avatar avatar-ex-sm" title="Master Card" alt=""></a></li>
+                    <li class="list-inline-item"><a href="javascript:void(0)"><img src="images/payments/paypal.png" class="avatar avatar-ex-sm" title="Paypal" alt=""></a></li>
+                    <li class="list-inline-item"><a href="javascript:void(0)"><img src="images/payments/visa.png" class="avatar avatar-ex-sm" title="Visa" alt=""></a></li>
+                </ul>
+            </div><!--end col-->
+        </div><!--end row-->
+    </div><!--end container-->
+</footer><!--end footer-->
+<!-- Footer End -->
 
-			</section>
-			<section>
-				<h4>Our services</h4>
-				<ul class="alt">
-					<li>E-Commerce</li>
-					<li>Web Applications</li>
-					<li>Mobile Application Development</li>
-					<li>SEO & Web Design</li>
-					<li>Web Hosting</li>
-					<li>Maintenence</li>
-							<br><br>
-					<h4 style="color:#8075ff">Financing</h4>
-					
-						<li><a href="https://start.zip.co/?pp=zipBizBasic&_ga=2.250520960.722411811.1613808814-301674048.1613808814">Zip Money&nbsp;&nbsp;&nbsp;</a><img src="./images/download.svg" width="120px" height="120px"></li>
-						<li><a href="./autopayments.html">Pay Pal&nbsp;&nbsp;&nbsp;</a></li>
+<!-- Modal Content Start -->
+<div class="modal fade" id="loginform" tabindex="-1" role="dialog" aria-hidden="true" style="padding-bottom: 20%;">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content rounded shadow-lg border-0 overflow-hidden position-relative">
+            <button type="button" class="btn-close position-absolute top-0 end-0 mt-2 me-2" style="z-index: 1" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-body p-0">
+                <div class="container-fluid px-0">
+                    <div class="row align-items-center g-0">
+                        <div class="col-lg-6 col-md-5">
+                        </div><!--end col-->
+
+                        
+                        </div><!--end col-->
+                    </div><!--end row-->
+                </div><!--end container-->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal Content End -->
+
+<!-- Back to top -->
+<a href="#" onclick="topFunction()" id="back-to-top" class="btn btn-icon btn-primary back-to-top"><i data-feather="arrow-up" class="icons"></i></a>
+<!-- Back to top -->
 
 
-				</ul>
-			</section>
-			<section>
-				<h4>Social Media</h4>
-				<ul class="plain">
-					<li><a href="https://www.facebook.com/Sanantonioswebdesign"><i class="icon fa-facebook">&nbsp;</i>Facebook</a></li>
-					<li><a href="https://www.instagram.com/sanantonios_web_design/"><i class="icon fa-instagram">&nbsp;</i>Instagram</a></li>
-				</ul>
-			</section>
-	
-		</div>
-		<div class="copyright">
-			 &copy; <script type="text/javascript">
-				document.write(new Date().getFullYear());</script> San Antonio's Web design<a href="https://www.sanantonioswebdesign.com"></a> 
-		</div>
 
-	</div>
-</footer>
-<link rel="preload" href="assets/js/jquery.min.js" as="script">
-<link rel="preload" href="assets/js/browser.min.js" as="script">
-<link rel="preload" href="assets/js/breakpoints.min.js" as="script">
-<link rel="preload" href="assets/js/util.js" as="script">
-<link rel="preload" href="assets/js/main.js" as="script">
-<link rel="preload" href="https://code.jquery.com/jquery-3.2.1.slim.min.js" as="script">
-<link rel="preload" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" as="script">
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/browser.min.js"></script>
-<script src="assets/js/breakpoints.min.js"></script>
-<script src="assets/js/util.js"></script>
-<script src="assets/js/main.js"></script>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<!-- sovrn add-->
-<script type="text/javascript">
-	var vglnk = {key: '5055b8982bba6f2639dc17562da13008'};
-	(function(d, t) {
-		var s = d.createElement(t);
-			s.type = 'text/javascript';
-			s.async = true;
-			s.src = '//cdn.viglink.com/api/vglnk.js';
-		var r = d.getElementsByTagName(t)[0];
-			r.parentNode.insertBefore(s, r);
-	}(document, 'script'));
-</script>  
+<!-- javascript -->
+<script src="js/bootstrap.bundle.min.js"></script>
+<!-- SLIDER -->
+<script src="js/tiny-slider.js "></script>
+<!-- Icons -->
+<script src="js/feather.min.js"></script>
+<!-- Main Js -->
+<script src="js/plugins.init.js"></script><!--Note: All init js like tiny slider, counter, countdown, maintenance, lightbox, gallery, swiper slider, aos animation etc.--> <!-- Design template provided by landrick & Shreethemese-->
+<script src="js/app.js"></script><!--Note: All important javascript like page loader, menu, sticky menu, menu-toggler, one page menu etc. -->
 </body>
 </html>
