@@ -4902,3 +4902,18 @@ p {
   padding: 30px 0;
 }
 /*# sourceMappingURL=style.css.map */
+
+
+
+/* custom classes for reviews  */
+.reviews { 
+
+  @media only screen and (min-device-width: 762px) {
+    /* tablets and small laptops */
+width: 400% !important;
+position: absolute !important;
+text-align: center;
+transform: translate(50%, 50%) !important;
+
+}
+/* 762 -9951 */
